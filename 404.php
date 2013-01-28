@@ -4,6 +4,6 @@ require_once("globals.php");
 
 dbconn();
 
-stderr("404", "Sidan hittades inte oavsett");
+stderr("404", "Sidan hittades inte oavsettsson");
 
 ?>
