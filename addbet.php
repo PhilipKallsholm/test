@@ -6,7 +6,7 @@ dbconn();
 loggedinorreturn();
 
 if (!staff() && $CURUSER["betadmin"] == 'no')
-	stderr("Fel", "Tillgång nekad.");
+	stderr("Fel", "Tillgång nekas.");
 
 if ($_POST)
 {
@@ -25,7 +25,7 @@ if ($_POST)
 	}
 
 	if (!$name || !$descr || count($alts) < 2 || !$_POST["ends"])
-		stderr("Fel", "Vänligen fyll i samtliga obligatoriska fält.");
+		stderr("Fel", "Vänligen fyll i samtliga obligatoriska fält NUUU.");
 
 	if (strlen($ends) != 19 || !preg_match("/\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/i", $ends))
 		stderr("Fel", "Datumet är felaktigt.");
